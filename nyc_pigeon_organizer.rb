@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   organized = {}
   data.each do |attribute, specifier|
     specifier.each do |kind, name|
-      #binding.pry
+      binding.pry
       if organized.keys.include?(name[index])
         binding.pry
         organized[name[index]][attribute] = kind.to_s
